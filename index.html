@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Vanessa Flores — creative director and brand designer in Los Angeles. Visual identities and design systems for Indeed, Hilton, Johnson & Johnson, Dentsply Sirona, the Los Angeles Marathon, and more.">
+<meta property="og:title" content="Vanessa Flores — Brand Design & Creative Direction">
+<meta property="og:description" content="Twenty years of visual identities and design systems that stay consistent long after the handoff.">
+<meta property="og:image" content="images/lamarathon.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}
+.quotes{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.qgrid blockquote{margin:0;padding:24px;background:var(--paper);border-left:4px solid var(--orange);min-width:0}
+.qgrid p{margin:0 0 16px;font-size:16px;line-height:1.55}
+.qgrid p::before{content:"\201C";font-family:var(--display);font-size:40px;line-height:0;color:var(--orange);margin-right:4px;vertical-align:-14px}
+.ulink{color:var(--orange);font-weight:600;border-bottom:1px solid currentColor}
+.qgrid footer{background:transparent;border:0;padding:0;font-size:13px;color:var(--ink-2);font-weight:600;letter-spacing:.02em}
+@media (max-width:860px){.qgrid{grid-template-columns:1fr}}
+</style>
+<title>Vanessa Flores</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Abril+Fatface&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a studio index. Oversized wordmark hero, then the work as a numbered ledger of client rows with real project tiles. Palette from Vanessa: white paper, Prussian-blue ink, very dark teal as the block color, orange as the single accent. */
+:root{
+  --paper:#FFFFFF; --paper-2:#F3F6F7; --ink:#0B2A4A; --ink-2:#4A6478; --line:#D5DEE4;
+  --teal:#0B3A47; --green:#0B3A47; --navy:#0B2A4A; --orange:#F26B1D; --orange-ink:#FFFFFF;
+  --display:'Gloock',Georgia,'Times New Roman',serif; --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --max:1180px; --gutter:clamp(16px,4vw,48px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0A1620;--paper-2:#10202C;--ink:#EAF1F5;--ink-2:#9FB3C2;--line:#23394A;--teal:#0E4858;--green:#0E4858;--orange:#FF7A33;--orange-ink:#0A1620;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0A1620;--paper-2:#10202C;--ink:#EAF1F5;--ink-2:#9FB3C2;--line:#23394A;--teal:#0E4858;--green:#0E4858;--orange:#FF7A33;--orange-ink:#0A1620;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);font-weight:600}
+
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.nav .mark{font-family:var(--display);font-size:20px}
+.nav .mark b{color:var(--orange);font-weight:400}
+.nav ul{display:flex;gap:22px;margin:0;padding:0;list-style:none;font-size:14px;font-weight:500}
+.nav li a{padding:6px 0;border-bottom:2px solid transparent}
+.nav li a:hover{border-color:var(--orange)}
+@media (max-width:560px){.nav ul{gap:14px;font-size:13px}}
+
+.hero{padding-block:clamp(48px,9vw,120px) clamp(32px,6vw,72px);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-8vw;top:-10vw;width:38vw;height:38vw;max-width:520px;max-height:520px;border-radius:50%;background:var(--teal);opacity:.10;pointer-events:none}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(52px,11vw,152px);line-height:.92;letter-spacing:-.02em;margin:0 0 28px;text-wrap:balance;position:relative}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-row{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;position:relative}
+.hero p.lede{font-size:clamp(19px,2.2vw,24px);line-height:1.4;max-width:34ch;margin:0;text-wrap:balance}
+.hero-meta{display:grid;gap:10px;font-size:14px;color:var(--ink-2)}
+.hero-meta b{color:var(--ink);font-weight:600}
+@media (max-width:760px){.hero-row{grid-template-columns:1fr;gap:24px}}
+
+.clients{padding-block:22px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.clients .wrap{display:flex;flex-wrap:wrap;gap:10px 10px;align-items:center}
+.clients .eyebrow{margin-right:10px}
+.clients span.c{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;color:#fff;background:var(--teal);white-space:nowrap}
+.clients span.c:nth-child(3n){background:var(--navy)}
+.clients span.c:nth-child(5n){background:var(--navy)}
+
+.section{padding-block:clamp(48px,7vw,96px)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.section-head h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,4.5vw,48px);margin:0;letter-spacing:-.01em}
+.section-head p{margin:0;color:var(--ink-2);max-width:48ch}
+.ledger{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:52px 1.2fr 1fr 1.4fr 260px;gap:24px;align-items:center;padding-block:22px;border-bottom:1px solid var(--line);transition:background .2s}
+.row:hover{background:var(--paper-2)}
+.row .n{font-variant-numeric:tabular-nums;color:var(--orange);font-family:var(--display);font-size:20px}
+.row .client{font-family:var(--display);font-size:clamp(24px,3vw,34px);line-height:1.05;min-width:0}
+.row .sector{color:var(--ink-2);font-size:15px}
+.row .sector b{display:block;color:var(--teal);font-weight:600}
+.row .deliv{font-size:15px;min-width:0}
+.row .deliv span{display:inline-block;margin:0 6px 6px 0;padding:2px 9px;border:1px solid var(--line);border-radius:999px}
+.tile{appearance:none;padding:0;cursor:zoom-in;font:inherit;color:inherit;width:100%;display:block;aspect-ratio:4/3;max-width:100%;border:1px solid var(--line);background:var(--paper-2);overflow:hidden;border-radius:4px;box-shadow:0 1px 0 var(--line)}
+.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.row:hover .tile img{transform:scale(1.03)}
+@media (max-width:900px){.row{grid-template-columns:40px 1fr 220px;grid-template-areas:"n client tile" "n sector tile" "n deliv tile"}.row .n{grid-area:n;align-self:start}.row .client{grid-area:client}.row .sector{grid-area:sector}.row .deliv{grid-area:deliv}.tile{grid-area:tile;align-self:start}}
+@media (max-width:600px){.row{grid-template-columns:1fr;grid-template-areas:"tile" "client" "sector" "deliv";gap:10px}.row .n{display:none}}
+@media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+
+.approach{background:var(--teal);color:#fff}
+.approach .eyebrow{color:var(--orange)}
+.approach h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);margin:0 0 16px;letter-spacing:-.01em;text-wrap:balance}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22)}
+.steps div{min-width:0;padding:20px;background:var(--teal)}
+.steps h3{font-family:var(--body);font-weight:600;font-size:16px;margin:0 0 8px}
+.steps p{margin:0;font-size:15px;line-height:1.5;color:rgba(255,255,255,.85)}
+.steps .k{font-family:var(--display);font-size:30px;color:var(--orange);display:block;margin-bottom:10px}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
+.about p{margin:0 0 18px;max-width:62ch}
+.about h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);margin:0 0 22px;letter-spacing:-.01em}
+.svc{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.svc li{display:flex;justify-content:space-between;gap:16px;padding-block:12px;border-bottom:1px solid var(--line);font-size:16px}
+.svc li span{color:var(--ink-2);font-size:14px;text-align:right;flex-shrink:0}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+
+.contact{background:var(--navy);color:#fff;padding-block:clamp(48px,7vw,96px)}
+.contact .eyebrow{color:var(--orange)}
+.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,6vw,80px);margin:0 0 24px;letter-spacing:-.02em;line-height:1;text-wrap:balance}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--orange);color:var(--orange-ink);padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.email{font-family:var(--display);font-size:clamp(18px,2.6vw,26px);user-select:all}
+.toast{font-size:13px;color:rgba(255,255,255,.7)}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding-block:22px;font-size:13px;border-top:1px solid rgba(255,255,255,.15)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.lb{position:fixed;inset:0;z-index:50;background:rgba(11,42,74,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px);padding-top:calc(env(safe-area-inset-top,0px) + 12px)}
+.lb img{max-width:100%;max-height:calc(100% - 56px);object-fit:contain;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#fff}
+.lb .bar{display:flex;gap:12px;align-items:center;justify-content:space-between;width:min(100%,1180px);color:#fff;margin-bottom:12px;font-size:14px}
+.lb .bar b{font-family:var(--display);font-weight:400;font-size:20px}
+.lb .x{background:var(--orange);color:var(--orange-ink);border:0;border-radius:999px;padding:8px 16px;font:600 14px var(--body);cursor:pointer}
+.lb .nav2{display:flex;gap:8px}
+.lb .nav2 button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:8px 14px;font:600 14px var(--body);cursor:pointer}
+
+.more{padding-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tile.mini{aspect-ratio:4/3;position:relative}
+.tile.mini span{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;font-size:11px;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(11,42,74,.85));text-align:left;line-height:1.2}
+
+.ap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.ap-lede{margin:0 0 28px;max-width:52ch;color:rgba(255,255,255,.85)}
+.ap-diag{min-width:0}
+.bdiag{width:100%;height:auto;display:block;max-height:100%;max-width:520px;margin:0 auto}
+@media (max-width:860px){.ap{grid-template-columns:1fr}.ap-diag{order:-1}.bdiag{max-width:360px}}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="mark" href="#top">Vanessa <b>Flores</b></a>
+  <ul><li><a href="#work">Work</a></li><li><a href="#more">More</a></li><li><a href="#clients-say">Clients</a></li><li><a href="#approach">Approach</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <h1>Brands built to<br>hold <em>their shape.</em></h1>
+  <div class="hero-row">
+    <p class="lede">Creative director and brand designer. Twenty years of visual identities and design systems that stay consistent long after the handoff.</p>
+    <div class="hero-meta">
+      <div><b>Based in</b> Los Angeles · working remote and hybrid</div>
+      <div><b>Studio</b> Hook+Bridge, founded 2016</div>
+      <div><b>Languages</b> English · Spanish · Portuguese (intermediate)</div>
+    </div>
+  </div>
+</div></header>
+
+<div class="clients"><div class="wrap">
+  <span class="eyebrow">Selected clients</span>
+  <span class="c">Indeed</span><span class="c">Hilton</span><span class="c">Johnson &amp; Johnson</span><span class="c">Hitachi Vantara</span><span class="c">Dentsply Sirona</span><span class="c">Los Angeles Marathon</span><span class="c">Sizzler</span><span class="c">Medtronic</span><span class="c">Citi Bike</span><span class="c">Miami Music Project</span><span class="c">Vail Town Council</span><span class="c">Special Olympics Florida</span>
+</div></div>
+
+<section class="section" id="work"><div class="wrap">
+  <div class="section-head">
+    <h2>Work</h2>
+    <p>More than 25 identities and brand systems across technology, healthcare, CPG, hospitality, transportation, and nonprofit clients. A selection — click any project to see it full size.</p>
+  </div>
+  <ol class="ledger">
+    <li class="row"><span class="n">01</span><div class="client">Los Angeles Marathon</div><div class="sector"><b>Sports &amp; events</b>Mass participation</div><div class="deliv"><span>Brand expansion</span><span>Guidelines</span><span>Print &amp; OOH</span><span>Stationery</span></div><button class="tile" type="button" data-full="images/lamarathon-full.jpg" aria-label="View Los Angeles Marathon brand guidelines, typographic compositions and print media"><img src="images/lamarathon.jpg" alt="Los Angeles Marathon brand guidelines, typographic compositions and print media"></button></li>
+    <li class="row"><span class="n">02</span><div class="client">Indeed</div><div class="sector"><b>Technology</b>Employer marketing</div><div class="deliv"><span>One-pagers</span><span>Presentations</span><span>Ads</span><span>Mockups</span></div><button class="tile" type="button" data-full="images/indeed-full.jpg" aria-label="View Indeed for Employers one-pagers, ads and presentation slides"><img src="images/indeed.jpg" alt="Indeed for Employers one-pagers, ads and presentation slides"></button></li>
+    <li class="row"><span class="n">03</span><div class="client">IgniteTech</div><div class="sector"><b>Technology</b>Enterprise software</div><div class="deliv"><span>Rebranding</span><span>Logo</span><span>Brand guidelines v2.0</span><span>UI containers</span></div><button class="tile" type="button" data-full="images/ignitetech-full.jpg" aria-label="View IgniteTech rebrand: logo evolution, palette, tints and UI containers"><img src="images/ignitetech.jpg" alt="IgniteTech rebrand: logo evolution, palette, tints and UI containers"></button></li>
+    <li class="row"><span class="n">04</span><div class="client">Ayla Oasis</div><div class="sector"><b>Hospitality &amp; real estate</b>Seaside destination, Jordan</div><div class="deliv"><span>Bilingual brand guidelines</span><span>Icons</span><span>Signage &amp; wrap</span><span>Brochures</span></div><button class="tile" type="button" data-full="images/ayla-full.jpg" aria-label="View Ayla Oasis brand guidelines, icon set, stationery and social media"><img src="images/ayla.jpg" alt="Ayla Oasis brand guidelines, icon set, stationery and social media"></button></li>
+    <li class="row"><span class="n">05</span><div class="client">Johnson &amp; Johnson</div><div class="sector"><b>Healthcare</b>Innovative Medicine</div><div class="deliv"><span>Deck design</span><span>Data visualization</span></div><button class="tile" type="button" data-full="images/jnj-full.jpg" aria-label="View Johnson & Johnson year-end metrics deck design"><img src="images/jnj.jpg" alt="Johnson & Johnson year-end metrics deck design"></button></li>
+    <li class="row"><span class="n">06</span><div class="client">Dentsply Sirona</div><div class="sector"><b>Healthcare</b>Dental technology</div><div class="deliv"><span>Product brand guidelines</span><span>Co-branding</span><span>Roll-ups &amp; social</span></div><button class="tile" type="button" data-full="images/dentsply-full.jpg" aria-label="View SureSmile by Dentsply Sirona visual identity guidelines"><img src="images/dentsply.jpg" alt="SureSmile by Dentsply Sirona visual identity guidelines"></button></li>
+    <li class="row"><span class="n">07</span><div class="client">Baja Gold Salt Co.</div><div class="sector"><b>CPG</b>Pacific IQ</div><div class="deliv"><span>Packaging system</span><span>Product line</span></div><button class="tile" type="button" data-full="images/bajagold-full.jpg" aria-label="View Baja Gold Salt Co. packaging line"><img src="images/bajagold.jpg" alt="Baja Gold Salt Co. packaging line"></button></li>
+    <li class="row"><span class="n">08</span><div class="client">Propolis</div><div class="sector"><b>Real estate</b>Urban co-living</div><div class="deliv"><span>Branding</span><span>Guidelines</span><span>Photography</span><span>Façade &amp; interiors</span></div><button class="tile" type="button" data-full="images/propolis-full.jpg" aria-label="View Propolis brand guidelines, logo and lifestyle photography"><img src="images/propolis.jpg" alt="Propolis brand guidelines, logo and lifestyle photography"></button></li>
+    <li class="row"><span class="n">09</span><div class="client">Miami Music Project</div><div class="sector"><b>Nonprofit</b>Youth orchestra</div><div class="deliv"><span>Branding</span><span>Annual reports</span><span>Social &amp; email</span></div><button class="tile" type="button" data-full="images/miamimusic-full.jpg" aria-label="View Miami Music Project social media, posters and event design"><img src="images/miamimusic.jpg" alt="Miami Music Project social media, posters and event design"></button></li>
+    <li class="row"><span class="n">10</span><div class="client">Hilton Mexico City Santa Fe</div><div class="sector"><b>Hospitality</b>Hotel marketing</div><div class="deliv"><span>Social strategy</span><span>Barbie Room campaign</span><span>Photo &amp; video</span></div><button class="tile" type="button" data-full="images/hilton-full.jpg" aria-label="View Hilton Mexico City Santa Fe social posts and campaign imagery"><img src="images/hilton.jpg" alt="Hilton Mexico City Santa Fe social posts and campaign imagery"></button></li>
+    <li class="row"><span class="n">11</span><div class="client">Sizzler</div><div class="sector"><b>Food &amp; beverage</b>Restaurant chain</div><div class="deliv"><span>Quarterly implementation guide</span><span>Training</span><span>POP</span></div><button class="tile" type="button" data-full="images/sizzler-full.jpg" aria-label="View Sizzler quarterly implementation guide layout"><img src="images/sizzler.jpg" alt="Sizzler quarterly implementation guide layout"></button></li>
+    <li class="row"><span class="n">12</span><div class="client">DecoBike → Citi Bike</div><div class="sector"><b>Transportation</b>Florida's first public bike-share</div><div class="deliv"><span>System identity</span><span>Maps &amp; wayfinding</span><span>Infographics</span><span>Rebrand rollout</span></div><button class="tile" type="button" data-full="images/decobike-full.jpg" aria-label="View DecoBike and Citi Bike Miami maps, ads and infographic"><img src="images/decobike.jpg" alt="DecoBike and Citi Bike Miami maps, ads and infographic"></button></li>
+  </ol>
+</div></section>
+
+
+<section class="section more" id="more"><div class="wrap">
+  <div class="section-head">
+    <h2>More work</h2>
+    <p>Everything else from the studio years, in brief. Click any piece to view the full page.</p>
+  </div>
+  <div class="grid"><button class="tile mini" type="button" data-full="images/m05-full.jpg" aria-label="View Trusted Gives"><img src="images/m05.jpg" alt="Trusted Gives" loading="lazy"><span>Trusted Gives</span></button><button class="tile mini" type="button" data-full="images/m06-full.jpg" aria-label="View Trusted"><img src="images/m06.jpg" alt="Trusted" loading="lazy"><span>Trusted</span></button><button class="tile mini" type="button" data-full="images/m07-full.jpg" aria-label="View Paradigm Claim Services"><img src="images/m07.jpg" alt="Paradigm Claim Services" loading="lazy"><span>Paradigm Claim Services</span></button><button class="tile mini" type="button" data-full="images/m10-full.jpg" aria-label="View Ayla Oasis — print & wrap"><img src="images/m10.jpg" alt="Ayla Oasis — print & wrap" loading="lazy"><span>Ayla Oasis — print & wrap</span></button><button class="tile mini" type="button" data-full="images/m11-full.jpg" aria-label="View Viking Pure Solutions"><img src="images/m11.jpg" alt="Viking Pure Solutions" loading="lazy"><span>Viking Pure Solutions</span></button><button class="tile mini" type="button" data-full="images/m12-full.jpg" aria-label="View American Identity Group — brand"><img src="images/m12.jpg" alt="American Identity Group — brand" loading="lazy"><span>American Identity Group — brand</span></button><button class="tile mini" type="button" data-full="images/m13-full.jpg" aria-label="View American Identity Group — collateral"><img src="images/m13.jpg" alt="American Identity Group — collateral" loading="lazy"><span>American Identity Group — collateral</span></button><button class="tile mini" type="button" data-full="images/m16-full.jpg" aria-label="View Simply Nurses (Indeed)"><img src="images/m16.jpg" alt="Simply Nurses (Indeed)" loading="lazy"><span>Simply Nurses (Indeed)</span></button><button class="tile mini" type="button" data-full="images/m19-full.jpg" aria-label="View Sapori"><img src="images/m19.jpg" alt="Sapori" loading="lazy"><span>Sapori</span></button><button class="tile mini" type="button" data-full="images/m20-full.jpg" aria-label="View ECAM Secure"><img src="images/m20.jpg" alt="ECAM Secure" loading="lazy"><span>ECAM Secure</span></button><button class="tile mini" type="button" data-full="images/m21-full.jpg" aria-label="View Therapy Lab"><img src="images/m21.jpg" alt="Therapy Lab" loading="lazy"><span>Therapy Lab</span></button><button class="tile mini" type="button" data-full="images/m22-full.jpg" aria-label="View PowerPlant Partners"><img src="images/m22.jpg" alt="PowerPlant Partners" loading="lazy"><span>PowerPlant Partners</span></button><button class="tile mini" type="button" data-full="images/m23-full.jpg" aria-label="View 160 Main"><img src="images/m23.jpg" alt="160 Main" loading="lazy"><span>160 Main</span></button><button class="tile mini" type="button" data-full="images/m24-full.jpg" aria-label="View University Veterinary Hospital"><img src="images/m24.jpg" alt="University Veterinary Hospital" loading="lazy"><span>University Veterinary Hospital</span></button><button class="tile mini" type="button" data-full="images/m25-full.jpg" aria-label="View Vail Town Council"><img src="images/m25.jpg" alt="Vail Town Council" loading="lazy"><span>Vail Town Council</span></button><button class="tile mini" type="button" data-full="images/m26-full.jpg" aria-label="View Frances Mahon Deaconess Hospital"><img src="images/m26.jpg" alt="Frances Mahon Deaconess Hospital" loading="lazy"><span>Frances Mahon Deaconess Hospital</span></button><button class="tile mini" type="button" data-full="images/m27-full.jpg" aria-label="View Miami Music Project — annual reports"><img src="images/m27.jpg" alt="Miami Music Project — annual reports" loading="lazy"><span>Miami Music Project — annual reports</span></button><button class="tile mini" type="button" data-full="images/m30-full.jpg" aria-label="View Cedar Street"><img src="images/m30.jpg" alt="Cedar Street" loading="lazy"><span>Cedar Street</span></button><button class="tile mini" type="button" data-full="images/m31-full.jpg" aria-label="View Osmo"><img src="images/m31.jpg" alt="Osmo" loading="lazy"><span>Osmo</span></button><button class="tile mini" type="button" data-full="images/m32-full.jpg" aria-label="View Baltimore Water Taxi"><img src="images/m32.jpg" alt="Baltimore Water Taxi" loading="lazy"><span>Baltimore Water Taxi</span></button><button class="tile mini" type="button" data-full="images/m33-full.jpg" aria-label="View Mindray Mexico"><img src="images/m33.jpg" alt="Mindray Mexico" loading="lazy"><span>Mindray Mexico</span></button><button class="tile mini" type="button" data-full="images/m34-full.jpg" aria-label="View Noxe"><img src="images/m34.jpg" alt="Noxe" loading="lazy"><span>Noxe</span></button><button class="tile mini" type="button" data-full="images/m35-full.jpg" aria-label="View Culture Biosciences"><img src="images/m35.jpg" alt="Culture Biosciences" loading="lazy"><span>Culture Biosciences</span></button><button class="tile mini" type="button" data-full="images/m36-full.jpg" aria-label="View Facet Data"><img src="images/m36.jpg" alt="Facet Data" loading="lazy"><span>Facet Data</span></button><button class="tile mini" type="button" data-full="images/m39-full.jpg" aria-label="View AKKO"><img src="images/m39.jpg" alt="AKKO" loading="lazy"><span>AKKO</span></button><button class="tile mini" type="button" data-full="images/m40-full.jpg" aria-label="View Special Olympics Florida"><img src="images/m40.jpg" alt="Special Olympics Florida" loading="lazy"><span>Special Olympics Florida</span></button><button class="tile mini" type="button" data-full="images/m41-full.jpg" aria-label="View De-extinction"><img src="images/m41.jpg" alt="De-extinction" loading="lazy"><span>De-extinction</span></button><button class="tile mini" type="button" data-full="images/m42-full.jpg" aria-label="View Truffle Shuffle"><img src="images/m42.jpg" alt="Truffle Shuffle" loading="lazy"><span>Truffle Shuffle</span></button><button class="tile mini" type="button" data-full="images/m43-full.jpg" aria-label="View Bonsai"><img src="images/m43.jpg" alt="Bonsai" loading="lazy"><span>Bonsai</span></button><button class="tile mini" type="button" data-full="images/m44-full.jpg" aria-label="View Zipteam"><img src="images/m44.jpg" alt="Zipteam" loading="lazy"><span>Zipteam</span></button><button class="tile mini" type="button" data-full="images/m45-full.jpg" aria-label="View Synapse"><img src="images/m45.jpg" alt="Synapse" loading="lazy"><span>Synapse</span></button><button class="tile mini" type="button" data-full="images/m46-full.jpg" aria-label="View Commute Broward"><img src="images/m46.jpg" alt="Commute Broward" loading="lazy"><span>Commute Broward</span></button><button class="tile mini" type="button" data-full="images/m47-full.jpg" aria-label="View Ditec Solutions"><img src="images/m47.jpg" alt="Ditec Solutions" loading="lazy"><span>Ditec Solutions</span></button><button class="tile mini" type="button" data-full="images/m48-full.jpg" aria-label="View Thinkocrats"><img src="images/m48.jpg" alt="Thinkocrats" loading="lazy"><span>Thinkocrats</span></button><button class="tile mini" type="button" data-full="images/m49-full.jpg" aria-label="View Green Grove"><img src="images/m49.jpg" alt="Green Grove" loading="lazy"><span>Green Grove</span></button><button class="tile mini" type="button" data-full="images/m50-full.jpg" aria-label="View TEC"><img src="images/m50.jpg" alt="TEC" loading="lazy"><span>TEC</span></button><button class="tile mini" type="button" data-full="images/m52-full.jpg" aria-label="View BioEmblem"><img src="images/m52.jpg" alt="BioEmblem" loading="lazy"><span>BioEmblem</span></button></div>
+</div></section>
+
+<section class="section quotes" id="clients-say"><div class="wrap">
+  <div class="section-head">
+    <h2>What clients say</h2>
+    <p>Verified reviews from Upwork: 275 completed projects, 100% Job Success, 4.9 average across 125 ratings. <a class="ulink" href="https://www.upwork.com/freelancers/vanessaflores" target="_blank" rel="noopener">Read all 79 reviews</a></p>
+  </div>
+  <div class="qgrid">
+    <blockquote><p>They did a complete rebrand for our organization, which ended up contributing to our expansion into multiple new territories across the U.S. and increasing our online presence from just over 1,000 followers to over 50,000 across Meta and TikTok. Not only did they nail our logo, the identity they helped create has been a game changer.</p><footer>Jessica M. · Community &amp; Engagement Manager</footer></blockquote>
+    <blockquote><p>We've been working with Vanessa and her team at Hook+Bridge for over five years, and they've been an essential part of our brand's growth. They created our brand guidelines and have designed everything from decks and handouts to postcards and business cards. Their attention to detail, creativity, and consistency have made every project seamless.</p><footer>William S. · Five-year client, print &amp; digital</footer></blockquote>
+    <blockquote><p>Easily the best packaging designer we have worked with. Vanessa delivered exceptional work with minimal input from our side. She understood our needs instantly and turned them into amazing packaging designs.</p><footer>Hussaam B. · Brand identity &amp; packaging, FMCG</footer></blockquote>
+    <blockquote><p>Vanessa and her team identified several blind spots in our brand planning, put together a wonderful plan for us, and provided frequent opportunities for check-ins to make sure we were aligned. We had several pivots through our various projects together and her team was very flexible while still keeping to the timelines.</p><footer>Marketing lead · Ad-tech startup</footer></blockquote>
+    <blockquote><p>She has completely transformed all my marketing materials while perfecting my company's branding. Not only does she capture my brand, she makes abstract ideas come to life. Vanessa truly is an extension of my team.</p><footer>Taylor W. · Founder</footer></blockquote>
+    <blockquote><p>Vanessa and her team took our rough brand ideas and transformed them into a polished, finished brand that will stand out in a crowded marketplace. Looking forward to working together as we further develop Nuvo Bath.</p><footer>Founder · Nuvo Bath</footer></blockquote>
+    <blockquote><p>What impressed us most was their ability to understand our vision quickly and translate it into polished, professional designs that perfectly captured our brand identity. Marketing materials, presentation decks, branding, and graphics, and every single time they delivered beyond our expectations.</p><footer>Sherilyn S. · Executive Assistant</footer></blockquote>
+    <blockquote><p>Vanessa not only met but exceeded my expectations, delivering a design that perfectly captured the essence of our needs. Her attention to detail and ability to translate concepts into visually striking signage showcase her as an exceptionally talented designer.</p><footer>Michael M. · Maritime transportation signage</footer></blockquote>
+    <blockquote><p>Vanessa was an exceptional collaborator for this project, a redesign of our investor pitch deck that we needed within a week. She was so responsive, and her team did an amazing job in this very short timeframe.</p><footer>Founder · Mental health-tech startup</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="section approach" id="approach"><div class="wrap">
+  <div class="ap">
+    <div class="ap-text">
+      <span class="eyebrow">Approach</span>
+      <h2>The logo is the smallest part. The system is what the client keeps using.</h2>
+      <p class="ap-lede">A brand is a set of elements that work together: color, type, voice, imagery, layout, templates. When each one has a rule and a reason, anyone on the team can make something new and it still looks like the brand.</p>
+      <div class="steps">
+        <div><span class="k">Listen</span><h3>Discovery first</h3><p>Workshops with founders and marketing leads to settle positioning, audience, and what the brand must never do, before a single sketch.</p></div>
+        <div><span class="k">Reduce</span><h3>Fewer, firmer decisions</h3><p>A tight palette with defined roles, a fixed type scale, a small set of layout patterns. A system people can hold in their heads gets used.</p></div>
+        <div><span class="k">Equip</span><h3>Templates, not just rules</h3><p>Guidelines written for marketers, with do/don't examples, plus decks, social, and vendor specs that produce on-brand work without a designer in the loop.</p></div>
+        <div><span class="k">Review</span><h3>Quality as a gate</h3><p>Whether the asset comes from a teammate, an agency, or an AI tool, it passes the same check against the guidelines before it ships.</p></div>
+      </div>
+    </div>
+    <div class="ap-diag"><svg class="bdiag" viewBox="0 0 720 1260" role="img" aria-label="Diagram: a brand is a system of elements; the logo is one of them"><polyline points="110,584 56,147" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="56,147 98,147" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="110" y="156" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Logo</text><polyline points="155,584 194,216" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="194,216 236,216" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="248" y="225" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Color</text><polyline points="200,584 303,302" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="303,302 345,302" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="357" y="311" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Typography</text><polyline points="245,584 380,391" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="380,391 422,391" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="434" y="400" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Layout &amp; grid</text><polyline points="290,584 416,470" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="416,470 458,470" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="470" y="479" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Iconography</text><polyline points="328,608 442,571" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="442,571 484,571" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="496" y="580" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Photography</text><polyline points="110,676 56,1113" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="56,1113 98,1113" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="110" y="1122" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Motion</text><polyline points="155,676 194,1044" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="194,1044 236,1044" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="248" y="1053" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Digital &amp; social</text><polyline points="200,676 303,958" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="303,958 345,958" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="357" y="967" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Packaging</text><polyline points="245,676 380,869" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="380,869 422,869" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="434" y="878" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Templates</text><polyline points="290,676 416,790" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="416,790 458,790" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="470" y="799" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Voice &amp; tone</text><polyline points="328,652 442,689" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.6" stroke-linecap="round"/><polyline points="442,689 484,689" fill="none" stroke="#F26B1D" stroke-width="2.2" stroke-linecap="round"/><text x="496" y="698" text-anchor="start" fill="#FFFFFF" font-size="28" font-family="Figtree,system-ui,sans-serif" font-weight="600">Guidelines</text><rect x="110.0" y="592.0" width="210" height="76" rx="4" fill="#FFFFFF"/><text x="217" y="643" text-anchor="middle" fill="#0B3A47" font-size="40" font-family="Abril Fatface,Gloock,Georgia,serif" letter-spacing="2">BRAND</text></svg></div>
+  </div>
+</div></section>
+
+<section class="section" id="about"><div class="wrap about">
+  <div>
+    <h2>About</h2>
+    <p>I'm Vanessa Flores, a creative director and brand designer in Los Angeles. In 2016 I founded Hook+Bridge, an independent studio where I run client relationships, set the creative direction, and stay hands-on from first concept to final production files. Today I lead a team of two designers; at its largest the studio ran with four designers and three marketing partners.</p>
+    <p>Before the studio I built the visual ecosystem for DecoBike, Florida's first public bike-share system, and led its creative through the transition to Citi Bike across every station and bicycle. At Medtronic I produced multilingual training and e-learning materials used across departments.</p>
+    <p>I work daily with Claude and Adobe Firefly for research, concepting, and production, with human review against brand guidelines as the quality gate. Currently also a design evaluator for AI training at Tastemaker, correcting generated brand and layout output against professional standards.</p>
+    <p>BFA, Graphic Design, Miami International University of Art and Design. Associate Degree, Instituto de Diseño de Caracas.</p>
+  </div>
+  <div>
+    <span class="eyebrow">Services</span>
+    <ul class="svc">
+      <li>Brand strategy &amp; positioning<span>Workshops · audits</span></li>
+      <li>Visual identity<span>Logo · wordmark · system</span></li>
+      <li>Design systems &amp; guidelines<span>Tokens · templates · specs</span></li>
+      <li>Creative direction<span>In-house or agency teams</span></li>
+      <li>Campaigns &amp; collateral<span>Digital · print · OOH</span></li>
+      <li>Packaging &amp; production<span>Vendor-ready files</span></li>
+      <li>Presentation design<span>Keynote · Google Slides</span></li>
+      <li>AI output review<span>QA · guardrails · rubrics</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <span class="eyebrow">Contact</span>
+  <h2>Open to Creative Director and Lead Brand Designer roles, hybrid in LA or remote.</h2>
+  <div class="contact-row">
+    <span class="email" id="email">vanessa@hookbridge.com</span>
+    <button class="btn" id="copy" type="button">Copy email</button>
+    <a class="btn ghost" href="https://www.linkedin.com/in/ssota" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="toast" id="toast" aria-live="polite"></span>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Vanessa Flores · Hook+Bridge</span><span>Los Angeles, CA</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Project viewer">
+  <div class="bar"><b id="lbTitle"></b><div class="nav2"><button type="button" id="lbPrev">← Prev</button><button type="button" id="lbNext">Next →</button><button type="button" class="x" id="lbClose">Close</button></div></div>
+  <img id="lbImg" alt="">
+</div>
+<script>
+(function(){
+  var tiles=[].slice.call(document.querySelectorAll('.tile[data-full]')),lb=document.getElementById('lb'),img=document.getElementById('lbImg'),title=document.getElementById('lbTitle'),i=0;
+  function show(n){i=(n+tiles.length)%tiles.length;var tl=tiles[i];img.src=tl.getAttribute('data-full');img.alt=tl.querySelector('img').alt;var r=tl.closest('.row');title.textContent=r?r.querySelector('.client').textContent:tl.querySelector('span').textContent;lb.hidden=false;document.body.style.overflow='hidden';}
+  function hide(){lb.hidden=true;document.body.style.overflow='';}
+  tiles.forEach(function(tl,n){tl.addEventListener('click',function(){show(n)})});
+  document.getElementById('lbClose').addEventListener('click',hide);
+  document.getElementById('lbPrev').addEventListener('click',function(){show(i-1)});
+  document.getElementById('lbNext').addEventListener('click',function(){show(i+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)hide()});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
+})();
+(function(){
+  var b=document.getElementById('copy'),t=document.getElementById('toast'),e=document.getElementById('email');
+  b.addEventListener('click',function(){
+    var done=function(){t.textContent='Copied';setTimeout(function(){t.textContent=''},2000)};
+    var fail=function(){var r=document.createRange();r.selectNodeContents(e);var s=getSelection();s.removeAllRanges();s.addRange(r);t.textContent='Selected — press copy'};
+    try{navigator.clipboard.writeText(e.textContent).then(done,fail)}catch(err){fail()}
+  });
+})();
+</script>
+
+</body>
+</html>
