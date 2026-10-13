@@ -92,13 +92,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 .steps .k{font-family:var(--display);font-size:30px;color:var(--orange);display:block;margin-bottom:10px}
 @media (max-width:480px){.steps{grid-template-columns:1fr}}
 
-.about{display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:0 48px;align-items:start}
+.about>h2{grid-column:1}.about-sp{grid-column:2}
 .about p{margin:0 0 18px;max-width:62ch}
 .about h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);margin:0 0 22px;letter-spacing:-.01em}
 .svc{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
 .svc li{display:flex;justify-content:space-between;gap:16px;padding-block:12px;border-bottom:1px solid var(--line);font-size:16px}
 .svc li span{color:var(--ink-2);font-size:14px;text-align:right;flex-shrink:0}
-@media (max-width:760px){.about{grid-template-columns:1fr}}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:0}.about>h2,.about-sp{grid-column:auto}.about-sp{display:none}.about>div:last-child{margin-top:32px}}
 
 .contact{background:var(--navy);color:#fff;padding-block:clamp(48px,7vw,96px)}
 .contact .eyebrow{color:var(--orange)}
@@ -110,6 +111,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 .toast{font-size:13px;color:rgba(255,255,255,.7)}
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding-block:22px;font-size:13px;border-top:1px solid rgba(255,255,255,.15)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
 
 .lb{position:fixed;inset:0;z-index:50;background:rgba(11,42,74,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px);padding-top:calc(env(safe-area-inset-top,0px) + 12px)}
 .lb img{max-width:100%;max-height:calc(100% - 56px);object-fit:contain;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#fff}
@@ -144,7 +146,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <p class="lede">Creative director and brand designer. Twenty years of visual identities and design systems that stay consistent long after the handoff.</p>
     <div class="hero-meta">
       <div><b>Based in</b> Los Angeles · working remote and hybrid</div>
-      <div><b>Studio</b> Hook+Bridge, founded 2016</div>
+      <div><b>Studio</b> <a class="ulink" href="https://hookbridge.com" target="_blank" rel="noopener">Hook+Bridge</a>, founded 2016</div>
+      <div><b>Art</b> <a class="ulink" href="https://flouarts.com" target="_blank" rel="noopener">FLOU</a>, original artwork</div>
       <div><b>Languages</b> English · Spanish · Portuguese (intermediate)</div>
     </div>
   </div>
@@ -221,11 +224,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 </div></section>
 
 <section class="section" id="about"><div class="wrap about">
+  <h2>About</h2><div class="about-sp" aria-hidden="true"></div>
   <div>
-    <h2>About</h2>
-    <p>I'm Vanessa Flores, a creative director and brand designer in Los Angeles. In 2016 I founded Hook+Bridge, an independent studio where I run client relationships, set the creative direction, and stay hands-on from first concept to final production files. Today I lead a team of two designers; at its largest the studio ran with four designers and three marketing partners.</p>
+    <p>I'm Vanessa Flores, a creative director and brand designer in Los Angeles. In 2016 I founded <a class="ulink" href="https://hookbridge.com" target="_blank" rel="noopener">Hook+Bridge</a>, an independent studio where I run client relationships, set the creative direction, and stay hands-on from first concept to final production files. Today I lead a team of two designers; at its largest the studio ran with four designers and three marketing partners.</p>
     <p>Before the studio I built the visual ecosystem for DecoBike, Florida's first public bike-share system, and led its creative through the transition to Citi Bike across every station and bicycle. At Medtronic I produced multilingual training and e-learning materials used across departments.</p>
     <p>I work daily with Claude and Adobe Firefly for research, concepting, and production, with human review against brand guidelines as the quality gate. Currently also a design evaluator for AI training at Tastemaker, correcting generated brand and layout output against professional standards.</p>
+    <p>Outside the studio I make and sell original artwork as <a class="ulink" href="https://flouarts.com" target="_blank" rel="noopener">FLOU</a>.</p>
     <p>BFA, Graphic Design, Miami International University of Art and Design. Associate Degree, Instituto de Diseño de Caracas.</p>
   </div>
   <div>
@@ -254,7 +258,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   </div>
 </div></section>
 
-<footer><div class="wrap"><span>© 2026 Vanessa Flores · Hook+Bridge</span><span>Los Angeles, CA</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Vanessa Flores · <a href="https://hookbridge.com" target="_blank" rel="noopener">Hook+Bridge</a> · <a href="https://flouarts.com" target="_blank" rel="noopener">FLOU</a></span><span>Los Angeles, CA</span></div></footer>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Project viewer">
   <div class="bar"><b id="lbTitle"></b><div class="nav2"><button type="button" id="lbPrev">← Prev</button><button type="button" id="lbNext">Next →</button><button type="button" class="x" id="lbClose">Close</button></div></div>
