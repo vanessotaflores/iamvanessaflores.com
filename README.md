@@ -9,6 +9,11 @@ Built with Claude Code as plain HTML/CSS/JS — no framework, no build step. Dep
 
 
 
+## Case studies
+- `work/<project>.html` — one page per featured project (13), linked from the tiles and client names on the home page.
+- `images/work/` — gallery images for those pages (web JPGs, max 2000px), exported from the final files in Dropbox.
+- To add an image: drop a JPG into `images/work/` and copy a `<button>` line inside `<div class="gal">` on that project's page.
+
 ## Deploy to GitHub Pages
 1. Create an empty repo on GitHub named `vanessaflores` (or any name).
 2. In this folder:

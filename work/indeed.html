@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indeed — Vanessa Flores</title>
+<meta name="description" content="Sales and marketing material for Indeed&#x27;s employer products, including Text2Apply, a text-to-apply hiring tool for local businesses, and Simply Nurses, a job app for nurses.">
+<meta property="og:title" content="Indeed — Vanessa Flores">
+<meta property="og:description" content="Sales and marketing material for Indeed&#x27;s employer products, including Text2Apply, a text-to-apply hiring tool for local businesses, and Simply Nurses, a job app for nurses.">
+<meta property="og:image" content="../images/work/indeed-t2a-onepager-01.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Abril+Fatface&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a studio index. Oversized wordmark hero, then the work as a numbered ledger of client rows with real project tiles. Palette from Vanessa: white paper, Prussian-blue ink, very dark teal as the block color, orange as the single accent. */
+:root{
+  --paper:#FFFFFF; --paper-2:#F3F6F7; --ink:#0B2A4A; --ink-2:#4A6478; --line:#D5DEE4;
+  --teal:#0B3A47; --green:#0B3A47; --navy:#0B2A4A; --orange:#F26B1D; --orange-ink:#FFFFFF;
+  --display:'Gloock',Georgia,'Times New Roman',serif; --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --max:1180px; --gutter:clamp(16px,4vw,48px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0A1620;--paper-2:#10202C;--ink:#EAF1F5;--ink-2:#9FB3C2;--line:#23394A;--teal:#0E4858;--green:#0E4858;--orange:#FF7A33;--orange-ink:#0A1620;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0A1620;--paper-2:#10202C;--ink:#EAF1F5;--ink-2:#9FB3C2;--line:#23394A;--teal:#0E4858;--green:#0E4858;--orange:#FF7A33;--orange-ink:#0A1620;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);font-weight:600}
+
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.nav .mark{font-family:var(--display);font-size:20px}
+.nav .mark b{color:var(--orange);font-weight:400}
+.nav ul{display:flex;gap:22px;margin:0;padding:0;list-style:none;font-size:14px;font-weight:500}
+.nav li a{padding:6px 0;border-bottom:2px solid transparent}
+.nav li a:hover{border-color:var(--orange)}
+@media (max-width:560px){.nav ul{gap:14px;font-size:13px}}
+
+.hero{padding-block:clamp(48px,9vw,120px) clamp(32px,6vw,72px);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-8vw;top:-10vw;width:38vw;height:38vw;max-width:520px;max-height:520px;border-radius:50%;background:var(--teal);opacity:.10;pointer-events:none}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(52px,11vw,152px);line-height:.92;letter-spacing:-.02em;margin:0 0 28px;text-wrap:balance;position:relative}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-row{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;position:relative}
+.hero p.lede{font-size:clamp(19px,2.2vw,24px);line-height:1.4;max-width:34ch;margin:0;text-wrap:balance}
+.hero-meta{display:grid;gap:10px;font-size:14px;color:var(--ink-2)}
+.hero-meta b{color:var(--ink);font-weight:600}
+@media (max-width:760px){.hero-row{grid-template-columns:1fr;gap:24px}}
+
+.clients{padding-block:22px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.clients .wrap{display:flex;flex-wrap:wrap;gap:10px 10px;align-items:center}
+.clients .eyebrow{margin-right:10px}
+.clients span.c{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;color:#fff;background:var(--teal);white-space:nowrap}
+.clients span.c:nth-child(3n){background:var(--navy)}
+.clients span.c:nth-child(5n){background:var(--navy)}
+
+.section{padding-block:clamp(48px,7vw,96px)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.section-head h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,4.5vw,48px);margin:0;letter-spacing:-.01em}
+.section-head p{margin:0;color:var(--ink-2);max-width:48ch}
+.ledger{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:52px 1.2fr 1fr 1.4fr 260px;gap:24px;align-items:center;padding-block:22px;border-bottom:1px solid var(--line);transition:background .2s}
+.row:hover{background:var(--paper-2)}
+.row .n{font-variant-numeric:tabular-nums;color:var(--orange);font-family:var(--display);font-size:20px}
+.row .client{font-family:var(--display);font-size:clamp(24px,3vw,34px);line-height:1.05;min-width:0}
+.row .sector{color:var(--ink-2);font-size:15px}
+.row .sector b{display:block;color:var(--teal);font-weight:600}
+.row .deliv{font-size:15px;min-width:0}
+.row .deliv span{display:inline-block;margin:0 6px 6px 0;padding:2px 9px;border:1px solid var(--line);border-radius:999px}
+.tile{appearance:none;padding:0;cursor:zoom-in;font:inherit;color:inherit;width:100%;display:block;aspect-ratio:4/3;max-width:100%;border:1px solid var(--line);background:var(--paper-2);overflow:hidden;border-radius:4px;box-shadow:0 1px 0 var(--line)}
+.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.row:hover .tile img{transform:scale(1.03)}
+@media (max-width:900px){.row{grid-template-columns:40px 1fr 220px;grid-template-areas:"n client tile" "n sector tile" "n deliv tile"}.row .n{grid-area:n;align-self:start}.row .client{grid-area:client}.row .sector{grid-area:sector}.row .deliv{grid-area:deliv}.tile{grid-area:tile;align-self:start}}
+@media (max-width:600px){.row{grid-template-columns:1fr;grid-template-areas:"tile" "client" "sector" "deliv";gap:10px}.row .n{display:none}}
+@media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+
+.approach{background:var(--teal);color:#fff}
+.approach .eyebrow{color:var(--orange)}
+.approach h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);margin:0 0 16px;letter-spacing:-.01em;text-wrap:balance}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22)}
+.steps div{min-width:0;padding:20px;background:var(--teal)}
+.steps h3{font-family:var(--body);font-weight:600;font-size:16px;margin:0 0 8px}
+.steps p{margin:0;font-size:15px;line-height:1.5;color:rgba(255,255,255,.85)}
+.steps .k{font-family:var(--display);font-size:30px;color:var(--orange);display:block;margin-bottom:10px}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:0 48px;align-items:start}
+.about>h2{grid-column:1}.about-sp{grid-column:2}
+.about p{margin:0 0 18px;max-width:62ch}
+.about h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);margin:0 0 22px;letter-spacing:-.01em}
+.svc{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.svc li{display:flex;justify-content:space-between;gap:16px;padding-block:12px;border-bottom:1px solid var(--line);font-size:16px}
+.svc li span{color:var(--ink-2);font-size:14px;text-align:right;flex-shrink:0}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:0}.about>h2,.about-sp{grid-column:auto}.about-sp{display:none}.about>div:last-child{margin-top:32px}}
+
+.contact{background:var(--navy);color:#fff;padding-block:clamp(48px,7vw,96px)}
+.contact .eyebrow{color:var(--orange)}
+.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,6vw,80px);margin:0 0 24px;letter-spacing:-.02em;line-height:1;text-wrap:balance}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--orange);color:var(--orange-ink);padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.email{font-family:var(--display);font-size:clamp(18px,2.6vw,26px);user-select:all}
+.toast{font-size:13px;color:rgba(255,255,255,.7)}
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding-block:22px;font-size:13px;border-top:1px solid rgba(255,255,255,.15)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
+
+.lb{position:fixed;inset:0;z-index:50;background:rgba(11,42,74,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px);padding-top:calc(env(safe-area-inset-top,0px) + 12px)}
+.lb img{max-width:100%;max-height:calc(100% - 56px);object-fit:contain;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#fff}
+.lb .bar{display:flex;gap:12px;align-items:center;justify-content:space-between;width:min(100%,1180px);color:#fff;margin-bottom:12px;font-size:14px}
+.lb .bar b{font-family:var(--display);font-weight:400;font-size:20px}
+.lb .x{background:var(--orange);color:var(--orange-ink);border:0;border-radius:999px;padding:8px 16px;font:600 14px var(--body);cursor:pointer}
+.lb .nav2{display:flex;gap:8px}
+.lb .nav2 button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:8px 14px;font:600 14px var(--body);cursor:pointer}
+
+.more{padding-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tile.mini{aspect-ratio:4/3;position:relative}
+.tile.mini span{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;font-size:11px;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(11,42,74,.85));text-align:left;line-height:1.2}
+
+.ap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.ap-lede{margin:0 0 28px;max-width:52ch;color:rgba(255,255,255,.85)}
+.ap-diag{min-width:0}
+.bdiag{width:100%;height:auto;display:block;max-height:100%;max-width:520px;margin:0 auto}
+@media (max-width:860px){.ap{grid-template-columns:1fr}.ap-diag{order:-1}.bdiag{max-width:360px}}
+</style>
+<style>
+[hidden]{display:none!important}img{max-width:100%}
+.cs-hero{padding-block:clamp(40px,7vw,96px) clamp(28px,4vw,48px);border-bottom:1px solid var(--line)}
+.cs-hero .back{font-size:14px;font-weight:600;color:var(--ink-2);display:inline-block;margin-bottom:22px}
+.cs-hero .back:hover{color:var(--orange)}
+.cs-hero h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,8vw,104px);line-height:.95;letter-spacing:-.02em;margin:10px 0 26px;text-wrap:balance}
+.cs-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.cs-grid p.lede{font-size:clamp(19px,2.2vw,23px);line-height:1.45;margin:0 0 20px;max-width:46ch}
+.cs-grid ul.pts{margin:0;padding:0 0 0 18px;max-width:60ch}.cs-grid ul.pts li{margin-bottom:10px}
+.meta{display:grid;gap:18px;font-size:15px;border-top:2px solid var(--ink);padding-top:16px}
+.meta b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:4px}
+.meta .deliv span{display:inline-block;margin:0 6px 6px 0;padding:2px 9px;border:1px solid var(--line);border-radius:999px}
+.gal{columns:2 320px;column-gap:16px;padding-block:clamp(32px,5vw,64px)}
+.gal button{appearance:none;border:1px solid var(--line);background:var(--paper-2);padding:0;margin:0 0 16px;width:100%;display:block;cursor:zoom-in;border-radius:4px;overflow:hidden;break-inside:avoid}
+.gal img{width:100%;height:auto;display:block}
+.pn{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.pn a{padding:28px 0;display:block}.pn a+a{text-align:right;border-left:1px solid var(--line);padding-left:20px}
+.pn small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.pn span{font-family:var(--display);font-size:clamp(22px,3vw,32px)}.pn a:hover span{color:var(--orange)}
+@media (max-width:760px){.cs-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="mark" href="../index.html">Vanessa <b>Flores</b></a>
+  <ul><li><a href="../index.html#work">Work</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li></ul>
+</div></nav>
+<header class="cs-hero"><div class="wrap">
+  <a class="back" href="../index.html#work">← All work</a>
+  <div class="eyebrow">02 · Technology</div>
+  <h1>Indeed</h1>
+  <div class="cs-grid">
+    <div><p class="lede">Sales and marketing material for Indeed&#x27;s employer products, including Text2Apply, a text-to-apply hiring tool for local businesses, and Simply Nurses, a job app for nurses.</p><ul class="pts"><li>Text2Apply: a one-pager for the sales team and a signage family (posters, yard signs, window clings, vehicle magnets, flyers and business cards) produced as generics and customised per employer.</li><li>Simply Nurses: app store preview screens and Google Play ad sets in multiple sizes.</li><li>Every piece built as an editable template so the team could version it at speed.</li></ul></div>
+    <div class="meta">
+      <div><b>Sector</b>Technology · Employer marketing</div>
+      <div><b>Role</b>Creative direction &amp; design, Hook+Bridge</div>
+      <div class="deliv"><b>Deliverables</b><span>One-pagers</span><span>Signage system</span><span>App store creative</span><span>Ads</span></div>
+    </div>
+  </div>
+</div></header>
+<main class="wrap"><div class="gal"><button type="button" data-full="../images/work/indeed-t2a-onepager-01.jpg"><img src="../images/work/indeed-t2a-onepager-01.jpg" alt="Indeed — t2a onepager 01" loading="eager"></button><button type="button" data-full="../images/work/indeed-t2a-poster.jpg"><img src="../images/work/indeed-t2a-poster.jpg" alt="Indeed — t2a poster" loading="eager"></button><button type="button" data-full="../images/work/indeed-t2a-yard.jpg"><img src="../images/work/indeed-t2a-yard.jpg" alt="Indeed — t2a yard" loading="lazy"></button><button type="button" data-full="../images/work/indeed-t2a-flyer.jpg"><img src="../images/work/indeed-t2a-flyer.jpg" alt="Indeed — t2a flyer" loading="lazy"></button><button type="button" data-full="../images/work/indeed-simplynurses-app-1.jpg"><img src="../images/work/indeed-simplynurses-app-1.jpg" alt="Indeed — simplynurses app 1" loading="lazy"></button><button type="button" data-full="../images/work/indeed-simplynurses-app-2.jpg"><img src="../images/work/indeed-simplynurses-app-2.jpg" alt="Indeed — simplynurses app 2" loading="lazy"></button><button type="button" data-full="../images/work/indeed-simplynurses-app-3.jpg"><img src="../images/work/indeed-simplynurses-app-3.jpg" alt="Indeed — simplynurses app 3" loading="lazy"></button><button type="button" data-full="../images/work/indeed-simplynurses-ad.jpg"><img src="../images/work/indeed-simplynurses-ad.jpg" alt="Indeed — simplynurses ad" loading="lazy"></button></div></main>
+<div class="wrap"><nav class="pn" aria-label="More projects">
+  <a href="lamarathon.html"><small>← Previous</small><span>Los Angeles Marathon</span></a>
+  <a href="ignitetech.html"><small>Next →</small><span>IgniteTech</span></a>
+</nav></div>
+<section class="contact"><div class="wrap">
+  <div class="eyebrow">Let's work together</div>
+  <h2>Have a brand that needs a system?</h2>
+  <div class="contact-row"><a class="btn" href="mailto:vanessa@hookbridge.com">vanessa@hookbridge.com</a><a class="btn ghost" href="../index.html#work">See all work</a></div>
+</div></section>
+<footer><div class="wrap"><span>© Vanessa Flores · Hook+Bridge · Los Angeles</span><a href="../index.html">iamvanessaflores.com</a></div></footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="bar"><b>Indeed</b><div class="nav2"><button type="button" id="lbPrev">← Prev</button><button type="button" id="lbNext">Next →</button><button type="button" class="x" id="lbClose">Close</button></div></div>
+  <img id="lbImg" alt="">
+</div>
+<script>
+(function(){var t=[].slice.call(document.querySelectorAll('.gal button')),lb=document.getElementById('lb'),im=document.getElementById('lbImg'),i=0;
+function show(n){i=(n+t.length)%t.length;im.src=t[i].getAttribute('data-full');im.alt=t[i].querySelector('img').alt;lb.hidden=false;document.body.style.overflow='hidden'}
+function close(){lb.hidden=true;document.body.style.overflow='';t[i].focus()}
+t.forEach(function(b,k){b.addEventListener('click',function(){show(k)})});
+document.getElementById('lbClose').onclick=close;document.getElementById('lbPrev').onclick=function(){show(i-1)};document.getElementById('lbNext').onclick=function(){show(i+1)};
+lb.addEventListener('click',function(ev){if(ev.target===lb)close()});
+document.addEventListener('keydown',function(ev){if(lb.hidden)return;if(ev.key==='Escape')close();if(ev.key==='ArrowRight')show(i+1);if(ev.key==='ArrowLeft')show(i-1)});})();
+</script>
+</body>
+</html>
