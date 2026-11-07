@@ -168,7 +168,7 @@ footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
     <div><p class="lede">Visual identity guidelines for SureSmile, Dentsply Sirona&#x27;s clear aligner brand.</p><ul class="pts"><li>Defined the photography style, gradients, colour and typography that give SureSmile a warmer, more personal feel than a typical medical brand.</li><li>Templates and rules for roll-up banners, PowerPoint and social media.</li><li>Co-branding guidance for dental practices that sell the product.</li></ul></div>
     <div class="meta">
       <div><b>Sector</b>Healthcare · Dental technology</div>
-      <div><b>Role</b>Creative direction &amp; design, Hook+Bridge</div>
+      <div><b>Role</b>Creative direction &amp; design, Hook+Bridge</div><div><b>Years working together</b>2021</div>
       <div class="deliv"><b>Deliverables</b><span>Product brand guidelines</span><span>Co-branding</span><span>Roll-ups</span><span>Social</span><span>Presentations</span></div>
     </div>
   </div>
@@ -194,7 +194,7 @@ var gb=[].slice.call(document.querySelectorAll('.gal button[data-full]'));var gl
 function show(n){i=(n+list.length)%list.length;im.src=list[i].src;im.alt=list[i].cap;cp.textContent=list[i].cap;lb.hidden=false;document.body.style.overflow='hidden';var nx=list[(i+1)%list.length];if(nx){(new Image()).src=nx.src}}
 function close(){lb.hidden=true;document.body.style.overflow='';if(opener)opener.focus()}
 gb.forEach(function(b,k){b.addEventListener('click',function(){list=gl;opener=b;show(k)})});
-[].slice.call(document.querySelectorAll('.doc[data-doc]')).forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-doc'),n=+b.getAttribute('data-n'),t=b.getAttribute('data-title'),k=b.getAttribute('data-kind');list=[];for(var p=1;p<=n;p++){list.push({src:'../images/work/ayla/'+d+'/'+(p<10?'0':'')+p+'.jpg',cap:t+' · '+k+' · page '+p+' of '+n})}opener=b;show(0)})});
+[].slice.call(document.querySelectorAll('.doc[data-doc]')).forEach(function(b){b.addEventListener('click',function(){var d=b.getAttribute('data-doc'),base=b.getAttribute('data-base')||'ayla',n=+b.getAttribute('data-n'),t=b.getAttribute('data-title'),k=b.getAttribute('data-kind');list=[];for(var p=1;p<=n;p++){list.push({src:'../images/work/'+base+'/'+d+(base==='ayla'?'/':'-')+(p<10?'0':'')+p+'.jpg',cap:t+' · '+k+' · '+(base==='ayla'?'page':'image')+' '+p+' of '+n})}opener=b;show(0)})});
 document.getElementById('lbClose').onclick=close;document.getElementById('lbPrev').onclick=function(){show(i-1)};document.getElementById('lbNext').onclick=function(){show(i+1)};
 lb.addEventListener('click',function(ev){if(ev.target===lb)close()});
 document.addEventListener('keydown',function(ev){if(lb.hidden)return;if(ev.key==='Escape')close();if(ev.key==='ArrowRight')show(i+1);if(ev.key==='ArrowLeft')show(i-1)});})();
